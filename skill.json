@@ -1,0 +1,29 @@
+{
+    "skillManifest": {
+      "publishingInformation": {
+        "locales": {
+          "de-DE": {
+            "summary": "Frage Delzepich, welche Sorten verfügbar sind",
+            "examplePhrases": [
+              "Alexa öffne Delzepich"
+            ],
+            "name": "Delzepich",
+            "description": "Frage Delzepich, welche Sorten verfügbar sind."
+          }
+        },
+        "isAvailableWorldwide": false,
+        "testingInstructions": "Sample Testing Instructions.",
+        "category": "DELIVERY_AND_TAKEOUT",
+        "distributionCountries": []
+      },
+      "apis": {
+        "custom": {
+          "endpoint": {
+            "sourceDir": "lambda/py",
+            "uri": "alexa-skill-delzepich-eis"
+          }
+        }
+      },
+      "manifestVersion": "1.0"
+    }
+  }
