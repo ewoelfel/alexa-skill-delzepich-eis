@@ -1,29 +1,34 @@
 {
-    "skillManifest": {
-      "publishingInformation": {
-        "locales": {
-          "de-DE": {
-            "summary": "Frage Delzepich, welche Sorten verfügbar sind",
-            "examplePhrases": [
-              "Alexa öffne Delzepich"
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "delzepich",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "IcecreamIntent",
+                    "slots": [
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "{date}",
+                        "welche Eissorten es am {date} gibt",
+                        "Welche Eissorten gibt es {date}",
+                        "welche Eissorten es {date} gibt",
+                        "Welche Eissorten gibt es {date}"
+                    ]
+                }
             ],
-            "name": "Delzepich",
-            "description": "Frage Delzepich, welche Sorten verfügbar sind."
-          }
-        },
-        "isAvailableWorldwide": false,
-        "testingInstructions": "Sample Testing Instructions.",
-        "category": "DELIVERY_AND_TAKEOUT",
-        "distributionCountries": []
-      },
-      "apis": {
-        "custom": {
-          "endpoint": {
-            "sourceDir": "lambda/py",
-            "uri": "alexa-skill-delzepich-eis"
-          }
+            "types": []
         }
-      },
-      "manifestVersion": "1.0"
     }
-  }
+}
