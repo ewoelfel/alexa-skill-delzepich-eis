@@ -1,0 +1,4 @@
+ask-sdk-core
+ask-sdk-local-debug
+babel
+bs4
